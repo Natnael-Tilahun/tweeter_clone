@@ -68,8 +68,8 @@ function handleTweetBtnClick() {
   const tweetInput = document.getElementById("tweet-input");
   if (tweetInput.value) {
     localStoredData.unshift({
-      handle: `@Scrimba`,
-      profilePic: `images/scrimbalogo.png`,
+      handle: `@NhattyTech`,
+      profilePic: `images/n.jpg`,
       likes: 0,
       retweets: 0,
       tweetText: tweetInput.value,
@@ -88,8 +88,8 @@ function handleReplyBtnClick(e) {
   const replyText = document.getElementById(e.target.id).value;
   if (replyText) {
     const newReply = {
-      handle: `@Scrimba`,
-      profilePic: `images/scrimbalogo.png`,
+      handle: `@NhattyTech`,
+      profilePic: `images/n.jpg`,
       tweetText: replyText,
     };
     localStoredData.filter((tweet) => {
@@ -137,7 +137,7 @@ function getFeedHtml(tweetsDatas) {
       repliesHtml += `
       <div class="reply">
           <div class="reply-inner">
-              <img src="images/scrimbalogo.png" class="profile-pic">
+              <img src="images/n.jpg" class="profile-pic">
               <textarea placeholder="Reply something?" class="reply-input" id="${tweet.uuid}"></textarea>
           </div>
           <button class="reply-btn" id="${tweet.uuid}" data-replyId="2">Reply</button>
@@ -147,7 +147,7 @@ function getFeedHtml(tweetsDatas) {
       repliesHtml = `
         <div class="reply" >
             <div class="reply-inner">
-                <img src="images/scrimbalogo.png" class="profile-pic">
+                <img src="images/n.jpg" class="profile-pic">
                 <textarea placeholder="Reply something?" class="reply-input" id="${tweet.uuid}"></textarea>
             </div>
             <button class="reply-btn" id="${tweet.uuid}" data-replyId="22">Reply</button>
@@ -166,7 +166,7 @@ function getFeedHtml(tweetsDatas) {
                 <span class="tweet-detail" >
                     <i class="fa-regular fa-comment-dots"
                     data-reply="${tweet.uuid}"
-                    ></i>
+                    >a</i>
                     ${tweet.replies.length}
                 </span>
                 <span class="tweet-detail" >

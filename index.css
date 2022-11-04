@@ -1,15 +1,19 @@
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
     font-family: 'Roboto', sans-serif;
 }
 
 /* typography and icons */
 
 h1{
+    width: 80px;
     color: #0F8CDF;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    padding: 7px;
     font-size: 20px;
+    border: 2px solid #0F8CDF;
+    border-radius: 40px;
 }
 
 i{
@@ -32,7 +36,7 @@ i{
 /* layout */
 
 main, header{
-    width: 290px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -120,8 +124,8 @@ button{
     border: none;
     resize: none;
     padding: 20px;
-    margin: 0 0 20px 0;
-    height: 60px;
+    margin: 10px 0 20px 0;
+    height: 50px;
     font-size: 20px;
     line-height: 30px;
     border-top: 1px solid lightgray;
@@ -130,10 +134,11 @@ button{
 
 .reply-input{
     font-size: 15px;
+    margin: 0 0 0 5px;
 }
 
 .reply-btn{
-    width: 80%;
+    width: 85%;
     align-self: flex-end;
 }
 
@@ -161,4 +166,20 @@ button{
 /* utility */
 .hidden{
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+        padding: 0px 0 20px 0;
+    }
+    main, header{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    h1{
+        margin-bottom: 25px;
+    }
+    
 }
