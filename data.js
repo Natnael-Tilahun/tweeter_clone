@@ -1,5 +1,16 @@
 export const tweetsData = [   
     {
+        handle: `@NhattyTech 💎`,
+        profilePic: `images/n.jpg`,
+        likes: 70,
+        retweets: 33,
+        tweetText: `I just cloned tweeter using only html, css and javascript! Open to any comment or feedback.`,
+        replies: [],
+        isLiked: true,
+        isRetweeted: true,
+        uuid: 'ab6b7b51-1c1b-4346-bc7b-d1555187ac90',
+    },  
+    {
         handle: `@TrollBot66756542 💎`,
         profilePic: `images/troll.jpg`,
         likes: 27,
@@ -29,7 +40,7 @@ export const tweetsData = [
                 tweetText: `I went last year😴`,
             },
         ],
-        isLiked: false,
+        isLiked: true,
         isRetweeted: false,
         uuid: '3c23454ee-c0f5-9g9g-9c4b-77835tgs2',
     },
