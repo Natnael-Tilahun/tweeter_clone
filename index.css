@@ -46,6 +46,7 @@ header{
     gap: 10px;
 }
 
+
 /* textareas + btn */
 
 textarea{
@@ -103,6 +104,37 @@ button{
     padding: 20px 0 0 0px;
     margin: 10px 0 10px 40px;
     width: 80%;
+}
+
+/* reply */
+
+.reply{
+    display: flex;
+    flex-direction: column;
+}
+
+.reply-inner{
+    display: flex;
+    width: 80%;
+    align-self: flex-end;
+    border: none;
+    resize: none;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    border-top: 1px solid lightgray;
+
+}
+
+.reply-input{
+    font-size: 15px;
+}
+
+.reply-btn{
+    width: 80%;
+    align-self: flex-end;
 }
 
 .handle{
